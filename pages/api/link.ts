@@ -24,6 +24,6 @@ const handler = async (req: NextApiRequest, res: NextApiResponse<LinkData>) => {
     return
   }
 
-  res.status(200).json({ shortUrl: parsed.result.shorturl })
+  res.status(200).json({ shortUrl: parsed.root.shorturl })
 }
 export default handler
